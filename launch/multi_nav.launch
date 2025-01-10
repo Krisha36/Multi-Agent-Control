@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Arguments -->
+  <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+  <arg name="map_file" default="$(find turtlebot3_navigation)/maps/blank_map.yaml"/>
+  <include file="/home/krisha/catkin_ws/src/gazebo_multi_robot_spawn_ow/launch/nav_tb3_0.launch">
+    <arg name="model" value="$(arg model)" />
+    <arg name="map_file" value="$(arg map_file)" />
+  </include>
+  <include file="/home/krisha/catkin_ws/src/gazebo_multi_robot_spawn_ow/launch/nav_tb3_1.launch">
+    <arg name="model" value="$(arg model)" />
+    <arg name="map_file" value="$(arg map_file)" />
+  </include>
+  <include file="/home/krisha/catkin_ws/src/gazebo_multi_robot_spawn_ow/launch/nav_tb3_2.launch">
+    <arg name="model" value="$(arg model)" />
+    <arg name="map_file" value="$(arg map_file)" />
+  </include>
+  <include file="/home/krisha/catkin_ws/src/gazebo_multi_robot_spawn_ow/launch/nav_tb3_3.launch">
+    <arg name="model" value="$(arg model)" />
+    <arg name="map_file" value="$(arg map_file)" />
+  </include>
+  <include file="/home/krisha/catkin_ws/src/gazebo_multi_robot_spawn_ow/launch/nav_tb3_4.launch">
+    <arg name="model" value="$(arg model)" />
+    <arg name="map_file" value="$(arg map_file)" />
+  </include>
+  <include file="/home/krisha/catkin_ws/src/gazebo_multi_robot_spawn_ow/launch/nav_tb3_5.launch">
+    <arg name="model" value="$(arg model)" />
+    <arg name="map_file" value="$(arg map_file)" />
+  </include>
+  <!-- rviz -->
+  <node pkg="rviz" type="rviz" name="rviz" required="false"
+        args="-d $(find turtlebot3_navigation)/rviz/multi_turtlebot3_navigation_own.rviz"/>
+</launch>

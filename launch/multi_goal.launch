@@ -1,0 +1,12 @@
+<launch>
+    <param name="/use_sim_time" value="true" />
+    <rosparam file="$(find gazebo_multi_robot_spawn)/goal_params.yaml"/>
+
+    <!-- Launch the Python script to spawn robots -->
+    <node name="gazebo_robot_spawner" pkg="gazebo_multi_robot_spawn" type="multi_goal.py" output="screen" />
+    
+    <!--<node name="delayed_launch" pkg="gazebo_multi_robot_spawn" type="goal.sh" args="5" output="screen"/>-->
+
+    
+
+</launch>

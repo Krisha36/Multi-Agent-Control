@@ -1,0 +1,5 @@
+#!/bin/bash
+sleep $1
+rosrun rrt_star_path_planning_turtlebot rrt_demo "-0.5000242305036843,0.500029276616031" "-0.5,0.5" "/tb3_0/move_base_simple/goal" "/tb3_0/odom" 
+rosrun rrt_star_path_planning_turtlebot rrt_demo "0.49997574012284624,0.500029449134841" "0.5,0.5" "/tb3_1/move_base_simple/goal" "/tb3_1/odom" 
+rosrun rrt_star_path_planning_turtlebot rrt_demo "1.4999757694963487,0.5000292766160304" "1.5,0.5" "/tb3_2/move_base_simple/goal" "/tb3_2/odom" 
