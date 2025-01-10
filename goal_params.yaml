@@ -1,0 +1,9 @@
+distribution_params:
+  angle: 90.0
+  center_x: 0.0
+  center_y: 0.0
+  separation: 3.0
+distribution_type: line
+num_of_robots: 6
+ref_robot_id: 2
+robot_model: burger

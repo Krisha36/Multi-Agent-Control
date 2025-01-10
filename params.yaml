@@ -1,0 +1,8 @@
+distribution_params:
+  center_x: 0.0
+  center_y: 0.0
+  radius: 2.0
+distribution_type: circle
+num_of_robots: 6
+ref_robot_id: 2
+robot_model: burger
